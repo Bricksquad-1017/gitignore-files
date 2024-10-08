@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+.shuttle {
+    position: fixed;
+    top: 20%; /* Start position */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    background-image: url('path_to_your_spaceshuttle_image.png'); /* Replace with your image */
+    background-size: cover;
+    transition: top 0.1s ease-out;
+}
+
+.content {
+    padding: 20px;
+    height: 2000px; /* Ensure there's enough content to scroll */
+}/* CSS styles for the shuttle and content */
