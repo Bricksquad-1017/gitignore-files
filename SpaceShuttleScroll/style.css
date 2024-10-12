@@ -1,27 +1,25 @@
-body {
+html, body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
+    padding: 0;
+    height: 200vh; /* simulate a long page */
 }
 
-.container {
+.scroll-container {
     position: relative;
     height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #000, #001d3d); /* simulate space */
+}
+
+.shuttle-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .shuttle {
-    position: fixed;
-    top: 20%; /* Start position */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px; /* Adjust size as needed */
-    height: 200px; /* Adjust size as needed */
-    background-image: url('path_to_your_spaceshuttle_image.png'); /* Replace with your image */
-    background-size: cover;
-    transition: top 0.1s ease-out;
+    width: 100px;
+    transition: transform 0.3s ease-out;
 }
-
-.content {
-    padding: 20px;
-    height: 2000px; /* Ensure there's enough content to scroll */
-}/* CSS styles for the shuttle and content */
