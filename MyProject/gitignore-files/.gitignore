@@ -1,0 +1,8 @@
+# Ignore .DS_Store files
+.DS_Store
+
+# Ignore vscode extensions and config
+.vscode/
+
+# Ignore npm cache and logs
+npm/
