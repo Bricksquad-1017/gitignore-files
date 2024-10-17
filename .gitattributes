@@ -1,0 +1,3 @@
+* text=auto
+*.sh text eol=lf     # For shell scripts, use Unix (LF) line endings
+*.bat text eol=crlf  # For batch files, use Windows (CRLF) line endings
